@@ -1,8 +1,8 @@
 <html>
 <head>
   <title></title>
-  <script src="libs/three.js"></script>
-  <script src="libs/requestAnimationFrame.js"></script>
+  <script src="../libs/three-r46.js"></script>
+  <script src="../libs/requestAnimationFrame.js"></script>
   <style type="text/css">
     html, body {
       width: 100%;
@@ -44,7 +44,7 @@
       light.position.set(0, 0, 1);
       scene.add( light );
 
-      var mapUrl = "imgs/pattern-0.png";
+      var mapUrl = "../imgs/pattern-0.png";
       var map = THREE.ImageUtils.loadTexture(mapUrl);
 
       var material = new THREE.MeshPhongMaterial({ map: map });
