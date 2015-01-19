@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Earth to WebGL</title>
+
+  <script src="libs/three.js"></script>
+  <script src="libs/jquery.js"></script>
+  <script src="libs/jquery.mousewheel.js"></script>
+  <script src="libs/requestAnimationFrame.js"></script>
+  <script src="libs/sim.js"></script>
+  <script src="js/2.js"></script>
+  <script>
+
+  var renderer = null;
+  var scene = null;
+  var camera = null;
+  var mesh = null;
+
+  $(document).ready(
+    function() {
+      var container = document.getElementById("container");
+      var app = new EarthApp();
+      app.init({ container: container });
+      app.run();
+    }
+  );
+
+
+  </script>
+
+</head>
+<body>
+    <div id="container" style="width:98%; height:98%; overflow:hidden; position:absolute; background-color:#000000"></div>
+</body>
+</html>
